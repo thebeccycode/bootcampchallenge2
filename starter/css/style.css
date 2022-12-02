@@ -1,3 +1,7 @@
+:root{
+--purpleBlack:rgb(12, 5, 30)
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +11,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  color: wheat;
 }
 
 h1{
@@ -15,4 +20,51 @@ h1{
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  color: wheat;
+  background-color: var(--purpleBlack);
 }
+
+h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: aliceblue;
+}
+
+#work {
+  display: grid;
+  margin: 50px;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "w1 w1"
+  "w2 w3"
+  "w4 w5"
+  ;
+}
+
+#website1 {
+  grid-area: w1;
+  background-color: var(--purpleBlack);
+
+}
+#website2 {
+  grid-area: w2;
+  background-color: var(--purpleBlack);
+}
+#website3 {
+  grid-area: w3;
+  background-color: var(--purpleBlack);
+}
+#website4 {
+  grid-area: w4;
+  background-color: var(--purpleBlack);
+}
+#website5 {
+  grid-area: w5;
+  background-color: var(--purpleBlack);
+}
+
