@@ -4,67 +4,56 @@
 
 * {
   box-sizing: border-box;
+  border-color: wheat;
+  border: 10px;
+  background-color: var(--purpleBlack);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
-  color: wheat;
-}
-
-h1{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 80px;
+  padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
   color: wheat;
-  background-color: var(--purpleBlack);
 }
 
-h2{
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  background-color: aliceblue;
+  align-items: center;
+  border: 2px rgb(154, 108, 147) dotted;
 }
 
-#work {
-  display: grid;
-  margin: 50px;
-  grid-template-rows: 50% 25% 25%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-  "w1 w1"
-  "w2 w3"
-  "w4 w5"
-  ;
+.container {
+display: grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"about desc"
+"work contact";
+border: 2px rgb(154, 108, 147) dotted;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
-#website1 {
-  grid-area: w1;
-  background-color: var(--purpleBlack);
-
-}
-#website2 {
-  grid-area: w2;
-  background-color: var(--purpleBlack);
-}
-#website3 {
-  grid-area: w3;
-  background-color: var(--purpleBlack);
-}
-#website4 {
-  grid-area: w4;
-  background-color: var(--purpleBlack);
-}
-#website5 {
-  grid-area: w5;
-  background-color: var(--purpleBlack);
+#about {
+  grid-area: about;
 }
 
+#description {
+  grid-area: desc;
+}
+
+#categoryGridArea{
+  grid-area: work;
+}
+
+#contact{
+  grid-area: contact;
+}
+
+footer{
+  font-size: small;
+  text-align: end;
+}
